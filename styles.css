@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f6f6f6;
+  }
+  
+  .calculator {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    width: 300px;
+  }
+  
+  #display {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 28px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .keys button {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .keys button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .operation {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .equal {
+    background-color: #27ae60;
+    color: #fff;
+  }
+  
+  .clear {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  /* Previous CSS remains the same */
+  
+  /* Updated button colors */
+  .keys button.operation {
+    background-color: #f39c12;
+    color: #fff;
+  }
+  
+  .keys button.equal {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .keys button.clear {
+    background-color: #c0392b;
+    color: #fff;
+  }
+  
+  /* New button style */
+  .keys button.delete {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
